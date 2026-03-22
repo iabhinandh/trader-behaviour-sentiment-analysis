@@ -11,10 +11,10 @@ st.set_page_config(
 )
 
 # Load data
-folder = "/Users/abhinandho/Desktop/Trader Behaviour & Performance Analytics/data/"
+folder = ""
 
-df_daily  = pd.read_csv(folder + "df_daily.csv")
-df_merged = pd.read_csv(folder + "df_merged.csv")
+df_daily  = pd.read_csv("df_daily.csv")
+df_merged = pd.read_csv("df_merged.csv")
 
 df_daily['date']  = pd.to_datetime(df_daily['date'])
 df_merged['date'] = pd.to_datetime(df_merged['date'])
